@@ -1,0 +1,164 @@
+/* css common start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* css common end*/
+body{
+    background-color: #2C3E50;
+}
+
+
+#slider{
+    height: 100vh;
+    background-color: #D7BDE2;
+    display: flex;
+    justify-content: center;
+}
+#slider .container h1{
+     text-transform: uppercase;
+     text-align: center;
+     font-size: 50px;
+     letter-spacing: 40px;
+     word-spacing: 10px;
+     background-color: #000;
+     color: orange;
+     margin-bottom: 50px;
+}
+
+#slider .right{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    color: #fff;
+    position: absolute;
+    right: -22px;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: 0.5s;
+}
+#slider .right:hover{
+    background-color: #000;
+    color: #fff;
+}
+#slider .left{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    color: #fff;
+    position: absolute;
+    left: -22px;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 30;
+    transition: 0.5s;
+}
+#slider .left:hover{
+    background-color: #000;
+    color: #fff;
+}
+#slider img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    padding: 0 10px;
+    transform: scale(0.9);
+    opacity: 0.6;
+ }
+
+#slider .slick-center img{
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* =====veno-box start===== */
+#veno-box{
+    height: 100vh;
+    background-color: #148F77;
+}
+
+#veno-box{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#veno-box a{
+   padding: 15px 25px;
+   background-color: red;
+   color:#fff;
+   border-radius: 5px;
+   margin-left: 5px;
+}
+
+#veno-box .row {
+    justify-content: center;
+    
+}
+/* =====veno-box end===== */
+
+/* =====mixitup section start===== */
+#mixitup{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #1D8348;
+}
+
+#mixitup button{
+    border: none;
+    outline: none;
+    background-color: #BB8FCE;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 20px 5px;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+#mixitup button:hover{
+    background-color: orange;
+    color: #000;
+}
+
+#mixitup .mix{
+    margin-left: 5px;
+    object-fit: cover;
+}
+#mixitup .row{
+    display: flex;
+}
+#mixitup .row img{
+    width: 250px;
+    height: 250px;
+}
+/* =====mixitup section end===== */
